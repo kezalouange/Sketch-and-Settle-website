@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Recent Projects</title>
+    <style>
+        /* Reset default margins */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: white; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            background: #35424a;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Navigation links */
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #1f1f1e;
+        }
+  
+        h1 {
+            text-align: center;
+            font-size: large;
+            margin-top: 20px;
+        }
+        p{
+            color: rgb(12, 12, 12);
+            text-decoration: none;
+            font-weight: 500; 
+            text-align: center;
+
+        }
+
+        /* Card styles */
+
+        .card {
+            background: #35424a;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+    padding: 15px;   /* reduced padding */
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+      color: #a1a0a0;
+            
+        }
+        p{
+            color: #ffffff;
+        }
+       
+
+      .card img {
+    width: 100%;           /* fill the card’s width */
+    height: 180px;         /* fixed height so all cards look uniform */
+    object-fit: cover;     /* crops edges but keeps proportions */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
+
+        .card-item {
+            width: 300px;
+            margin: 20px;
+            font-style: inherit;
+           height: 100%;
+        
+        }
+
+        /* Footer */
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+
+        .socials a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .socials a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="projects.html">Latest projects</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>HERE ARE THE RECENT PROJECTS THAT WE DID</h1>
+<p style="color: #1f1f1e;">
+    At Sketch and Settle, every project is a story of creativity and precision. <br>
+    We work hand-in-hand with our clients to design homes that are not only functional but also breathtaking in beauty.
+    From modern architectural marvels to timeless classics,<br> our portfolio showcases a variety of styles tailored to each client’s needs. 
+    Take a look at some of the most recent projects that have brought our vision to life.
+</p>
+        <div class="card-container">   
+    <div class="card card-item">
+        <img src="triahouse.avif" alt="Triangled House">
+        <h2>Triangled House in Belgium</h2>
+        <p>House of tourists</p>
+        <p>This unique architectural marvel features a striking triangular frame, offering panoramic views of the Belgian countryside. Designed for travelers, it’s a perfect blend of art and comfort.</p>
+    </div>
+
+    <div class="card card-item">
+        <img src="horizimage.webp" alt="Horizon Hill House">
+        <h3>Horizon Hill House</h3>
+        <p>Where you'll see beauty of the hills in your hotel.</p>
+        <p>Built on elevated terrain, this project ensures guests enjoy breathtaking sunrises and sunsets over rolling hills. It combines luxury hospitality with a deep connection to nature.</p>
+    </div>
+
+    <div class="card card-item">
+        <img src="bloomimage.avif" alt="Bloom Heights">
+        <h4>Bloom Heights</h4>
+        <p>Overseas views and designs</p>
+        <p>With its open terraces and modern glass structures, Bloom Heights offers a peaceful space to soak in ocean views. Every angle was crafted to maximize light and sea breeze flow.</p>
+    </div>
+
+    <div class="card card-item">
+        <img src="sea side.webp" alt="Seaside Villa">
+        <h4>Seaside Villa</h4>
+        <p>Relax with waves at your doorstep.</p>
+        <p>This villa embraces coastal living, with floor-to-ceiling windows that bring the sea indoors. Perfect for relaxation, it’s a tranquil escape just steps from the shoreline.</p>
+    </div>
+
+    <div class="card card-item">
+        <img src="city lights image.avif" alt="City Lights Loft">
+        <h4>City Lights Loft</h4>
+        <p>Modern living in the heart of the city.</p>
+        <p>Located in a vibrant urban setting, this loft boasts sleek interiors and large windows framing the dazzling city skyline. It’s designed for those who thrive in the fast-paced city life.</p>
+    </div>
+
+    <div class="card card-item">
+        <img src="forests house image.avif" alt="Forest Hideout">
+        <h4>Forest Hideout</h4>
+        <p>Peaceful escape surrounded by nature.</p>
+        <p>Nestled deep within the forest, this hideout offers a serene retreat. The wooden structure and earthy tones make it blend seamlessly into its lush surroundings.</p>
+    </div>
+</div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Sketch and Settle. All rights reserved.</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
