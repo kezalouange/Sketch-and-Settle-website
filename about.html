@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sketch and Settle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header with logo + nav */
+        header {
+            background: #35424a;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            border-radius: 6px; /* optional */
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #eef5ee;
+        }
+
+        /* Content */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #35424a;
+        }
+
+        p.intro {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            color: #444;
+        }
+
+        /* Cards Section */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #35424a;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #444;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .socials {
+            margin-top: 8px;
+        }
+
+        .socials a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .socials a:hover {
+            color: #45a049;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo + Nav -->
+    <header>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          
+            Sketch and Settle
+        </a>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="project.html">Latest projects</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Intro -->
+        <h1>We Bring Your Dream Home to Life</h1>
+        <p class="intro">
+            At <strong>Sketch and Settle</strong>, we don’t just sketch houses – we craft visions, stories, and 
+            lasting memories through architectural design. Our mission is to blend creativity and precision 
+            to help you visualize your dream home before the first brick is laid.
+        </p>
+
+        <!-- Cards: Who We Are, Mission, Vision -->
+        <div class="cards">
+            <div class="card">
+                <h2>Who We Are</h2>
+                <p>
+                    We are a passionate team of architects and designers dedicated to turning your ideas into 
+                    inspiring spaces. From modern minimalism to timeless classics, our designs are tailored to 
+                    reflect your lifestyle and personality. Every sketch we create is a blueprint of your future home, 
+                    carefully crafted with creativity, innovation, and precision.
+                </p>
+            </div>
+            <div class="card">
+                <h2>Our Mission</h2>
+                <p>
+                    To empower individuals and families by transforming their housing dreams into reality through 
+                    innovative design, detailed sketches, and personalized architectural solutions.
+                </p>
+            </div>
+            <div class="card">
+                <h2>Our Vision</h2>
+                <p>
+                    To become a leading name in architectural sketching and design across Africa, recognized for 
+                    creativity, sustainability, and excellence in turning spaces into inspiring homes.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sketch and Settle. All rights reserved.</p>
+        <div class="socials">
+            <a href="SketchnSettle">Facebook</a>
+            <a href="SketchnSettle">Twitter</a>
+            <a href="SketchandSettle Official">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

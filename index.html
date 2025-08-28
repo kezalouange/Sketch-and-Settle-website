@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Sketch and Settle</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4; 
+        }
+
+        /* Header with logo + nav */
+        header {
+            background: #35424a;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            border-radius: 6px; /* optional: makes logo edges soft */
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #eef5ee;
+        }
+
+        /* Home Section with background image */
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            background: url(the\ oneee.png) no-repeat center center/cover;
+            position: relative;
+        }
+
+        .home::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4); 
+        }
+
+        .home h1, .home p {
+            position: relative; 
+            z-index: 1;
+        }
+
+        .home h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: #35424a;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            padding: 30px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1000px;
+            color: white;
+        }
+
+        .card h2, .card h3 {
+            color: #fff;
+        }
+
+        /* Features Section */
+        .features h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: #394b3a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            padding: 25px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: white;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        }
+
+        /* Projects and Contact Sections */
+        .projects, .contact {
+            background: #35424a;
+            text-align: center;
+            color: white;
+        }
+        a{
+            color: rgb(207, 78, 78);
+        }
+        .projects h2, .contact h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .projects p, .contact p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+
+        .socials a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .socials a:hover {
+            color: #557457;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            Sketch and Settle
+           
+        </a>
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="project.html">Latest projects</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <h1>WELCOME TO SKETCH AND SETTLE</h1>
+        <p>A world where innovation and design alter and change the world.</p>
+    </section>
+
+    <!-- Features Section -->
+    <div class="card features">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="feature-card">
+                <h3>House Designing</h3>
+                <p>Create unique designs tailored to your needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Architecturing</h3>
+                <p>Easy navigation for a seamless experience.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sketching</h3>
+                <p>We design and work together to properly sketch your dream houses.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us Section -->
+    <div class="card projects">
+        <h2>About us</h2>
+        <p>At Sketch and Settle, we make sure to turn your dream houses into reality.
+            with our services we ensure our clients with a full satisfaction in turning their dream houses into reality and working
+             with them to turn not only into functional houses but also full of design. 
+        </p>
+        <a href="about.html" class="cta-button">About us</a>
+    </div>
+
+    <!-- Project Section -->
+    <div class="card projects">
+        <h2>Latest Projects</h2>
+        <p>At Sketch and Settle, we tackled different projects which are now being processed. <br>
+            If you want to be assured with our services, here is the link below.
+        </p>
+        <a href="project.html" class="cta-button">Viewing projects</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="card contact">
+        <h2>Interested? Contact Us!</h2>
+        <p>Let’s make your dream house come alive with us. As long as you need us, we are here to work with you and serve you to the fullest.
+            We work each and every day 24/7 just for you. </p>
+        <a href="contact.html" class="cta-button">Contact Us</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sketch and Settle. All rights reserved.</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
